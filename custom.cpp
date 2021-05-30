@@ -102,6 +102,10 @@
     {0, 0, 0} \
 }
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 static struct fm_fake_channel mt6620_fake_ch[] = MT6620_FM_FAKE_CHANNEL;
 static struct fm_fake_channel mt6627_fake_ch[] = MT6627_FM_FAKE_CHANNEL;
 static struct fm_fake_channel mt6628_fake_ch[] = MT6628_FM_FAKE_CHANNEL;
@@ -183,3 +187,7 @@ int CUST_get_cfg(struct CUST_cfg_ds *cfg)
     cfg->fake_chan = &fake_ch_info;
     return 0;
 }
+
+#ifdef __cplusplus
+}
+#endif
