@@ -40,7 +40,7 @@
 #include <stdbool.h>
 #include <cutils/properties.h>
 
-#include "../../../packages/apps/FMRadio/jni/fmr/fmr.h"
+#include "fmr.h"
 #include "fmlib_cust.h"
 
 #ifdef LOG_TAG
